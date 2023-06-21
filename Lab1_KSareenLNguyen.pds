@@ -1,0 +1,63 @@
+
+
+
+
+
+
+[Datasheet Preferences]
+Column Formatting=CCCCCCCCCCC
+Column Widths=150,60,200,200,200,200,200,200,200,200,200,
+Fixed Columns=2
+Fixed Rows=3
+Vert Split=300
+Horz Split=300
+Show All Test Labels=1
+[Documentation Block]
+DATA SHEET=Lab1_KSareenLNguyen.pds
+PRODUCT=Lab1_KSareenLNguyen
+REVISION=1.00
+ORIG. DATE=01/20/2023
+User Flag 1=
+User Flag 2=
+User Flag 3=
+User Flag 4=
+Comment=
+[Binning Block]
+1,,"P","Pass"
+2,,"F","Overvolt"
+3,,"F","Undervolt"
+4,,"F","Overcurrent"
+5,,"F","Undercurrent"
+6,,"F","Resistance Hi"
+7,,"F","Resistance Lo"
+[Datasheet Variable Map]
+"integer","TestNmbr","Test Number"
+"integer","SubTestNmbr","Subtest Number"
+"character","DLogDesc","Datalog Description"
+"double","LoLim","Low Limit"
+"double","HiLim","High Limit"
+"double","DFormat","Data Format"
+"character","Units","Units"
+"character","LoFBin","Low Fail Bin"
+"character","HiFBin","High Fail Bin"
+[LabelUserTest]
+Function=NO ASSOCIATION
+"",,,"",,,,"","",""
+[MeasureVoltage]
+Function=MeasureVoltage
+"",10,1,"Force Current, Measure Voltage",4.5,5.5,9.3,"Volts","3","2"
+[MeasureCurrent]
+Function=MeasureCurrent
+"",20,1,"Force Voltage, Measure Current",4.5,5.5,9.3,"Milliamps","5","4"
+[ResistanceForceCurrent]
+Function=ResistanceForceCurrent
+"",30,1,"Force Current, Measure Resistance",950,1050,9.3,"Ohms","7","6"
+[ResistanceForceVoltage]
+Function=ResistanceForceVoltage
+"",40,1,"Force Voltage, Measure Resistance",950,1050,9.3,"Ohms","7","6"
+[Test Order]
+LabelUserTest=0,""
+MeasureVoltage=1,""
+MeasureCurrent=1,""
+ResistanceForceCurrent=1,""
+ResistanceForceVoltage=1,""
